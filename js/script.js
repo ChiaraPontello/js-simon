@@ -8,6 +8,7 @@ let text = document.getElementById("msg");
 
 
 //geneo 5 numeri casuali da 1 a 100
+
 for (let i = 0; i < 5; i++) {
   numeroCasuale = generation(1, 100);
   console.log(numeroCasuale);
@@ -15,15 +16,24 @@ for (let i = 0; i < 5; i++) {
   
 }
 console.log(numeriCasuali);
-//i numeri generati compaiono
-//funzione per generare numeri casuali e dopo 3 secondi sparisce
 
+//i numeri generati compaiono
 //prompt("Memorizza questi cinque numeri: " + numeriCasuali );
 text.innerHTML = `Memorizzali: ${numeriCasuali}`;
+
+
+
+setTimeout (cleartext, 3000);
+function cleartext () {
+text.innerHTML = "" 
+
+}
+//funzione per generare numeri casuali e dopo 3 secondi sparisce
 setTimeout (myTime, 3000);
 function myTime () {
-   
+  
   for (let i = 0; i < 5; i++) {
+      
     numeroInserito = parseInt(prompt("inserisci un numero alla volta"));
      
       if (numeroInserito == numeriCasuali[i]) 
