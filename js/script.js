@@ -5,6 +5,7 @@
     let numeroCasuale;
     let numeroInserito;
     let text = document.getElementById("msg");
+   
 
 //geneo 5 numeri casuali da 1 a 100
     for (let i = 0; i < 5; i++) {
@@ -21,7 +22,7 @@
   text.innerHTML = `Memorizzali: ${numeriCasuali}`;
     setTimeout (myTime, 3000);
     function myTime () {
-        //document.getElementById('id-div').style.display='none';
+       
       for (let i = 0; i < 5; i++) {
         numeroInserito = parseInt(prompt("inserisci un numero alla volta"));
          
